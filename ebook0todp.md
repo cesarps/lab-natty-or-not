@@ -6,7 +6,7 @@ Ruby é uma linguagem de programação fácil de ler e escrever, criada para tor
 
 Os comandos em Ruby são usados de forma muito simples, podendo executar qualquer tarefa, desde uma conta simples de matemática até no desenvolvimento de queries de pesquisa em banco de dados.  
 
-Abaixo há uma descriçcao de como se começa um projeto do modo mais simples, explicando apenas o básico para sua instalçaõ e como se iniciar um projeto.
+Abaixo há uma descriçao de como se começa um projeto do modo mais simples, explicando apenas o básico para sua instalçaõ e como se iniciar um projeto.
 
 ## Como iniciar um projeto do zero
 
@@ -14,8 +14,8 @@ Abaixo há uma descriçcao de como se começa um projeto do modo mais simples, e
 
 Primeiro, você precisa instalar Ruby no seu computador. Depois, instale o Rails. Use os comandos no terminal:
 
-sudo apt-get install ruby-full # Instalação do Ruby em Linux)
-brew install ruby  (instalação do Ruby em MacOS)
+sudo apt-get install ruby-full # Instalação do Ruby em Linux)\
+brew install ruby  (instalação do Ruby em MacOS)\
 gem install rails  (Instalação do rails) 
 
 ### Criar um novo projeto:
@@ -31,7 +31,7 @@ Não se esqueça de abrir o diretório do projeto.
 
 Para ver sua aplicação em funcionamento, inicie o servidor:
 
-rails server
+rails server (ou rails s, um facilitador)
 
 
 ### Gerar um controlador:
@@ -45,8 +45,8 @@ rails generate controller nome_do_controlador
 
 No arquivo app/controllers/nome_do_controlador_controller.rb, adicione uma ação:
 
-def nome_da_ação
-  # Código da ação aqui
+def nome_da_ação\
+   Código da ação aqui\
 end
 
 
