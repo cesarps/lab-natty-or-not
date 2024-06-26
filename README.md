@@ -6,11 +6,11 @@ E-book que ensina ao usuário iniciante como desenvolver o primeiro sistema Ruby
 
 ## 🤖 Tecnologias Utilizadas
 - ChatGPT para elaboração de texto
-- tabnine  para geração de código
+- Tabnine  para geração de código
 
 ## 🧐 Processo de Criação
-Descreva como você criou o conteúdo
+O contéudo do e-book foi extraído via ChatGPT, através de um modo que ele explicasse os primeros passos para lidar com ROR da maneira mais simples.
+O conteúdo do exemplo mostra como se desenvolve um sistema completo, com texto extraído da ferramenta Tabnine, que pode ser instalada em na IDE VScode, onde através de cada pergunta foi gerado cada fragmento de código. As descrições entre os fragmentos não foram gerados por IA, apenas seus fragmentos e objetivos. 
 
 ## 🚀 Resultados
-Apresente os resultados do seu projeto
-
+O resultado demonstrou como se cria um projeto de FAQ (Frequently Ask Quentions), que envolve um usuário, perguntas e respostas. Foi desenvolvido um sistema completo e simples, envolvendo todas as suas etapas, desde a criação do projeto até sua conclusão.
