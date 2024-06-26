@@ -1,4 +1,4 @@
-Ruby on Rails do zero ao deploy: Como desenvolver seu primeiro projeto Rails
+# Ruby on Rails do zero ao deploy: Como desenvolver seu primeiro projeto Rails
 
 ## 📒 Descrição
 E-book que ensina ao usuário iniciante como desenvolver o primeiro sistema Ruby on Rails
