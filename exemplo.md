@@ -44,31 +44,35 @@ Faça a migração desses campos para sua tabela correspondente dentro do banco 
 
 rails db:migrate
 
+Você vai perceber que ele criará 3 tabelas em seu banco de dados, e algumas delas terão campos referentes a outras tabelas. Esses campos são numéricos e terminam com _id, que é a referência ao qual esse campo se relaciona. Por exemplo, na tabela question, haverá o campo user_id, que é uma chave estrangeira do campo user, indicando assim uma relação entre as tabelas user e question. 
+ 
+
 ### Relacionamentos
 
-Esses modelos se relacionam de algum modo, por isso há a criação de chaves estrangeiras dentro das tabelas question (referente ao usuario) e aswer (referente ao usuario e à question) 
+Esses modelos se relacionam de algum modo, por isso há a criação de chaves estrangeiras dentro das tabelas question (referente a user) e answer (referente à user e à question).
 
-Cada usuario pode conter uma ou mais questions  e muitas answers.
-Uma question pode ter muitas respostas e pertencer a um usuário.
-Cada answer pertence à um usuário e à  uma question
+Cada user pode conter uma ou mais questions  e muitas answers.\
+Uma question pode ter muitas answers e pertencer a um user.\
+Cada answer pertence à um usuário e à  uma question.
 
 Para especificar tudo isso e defina os seguintes comandos:
 
-user.rb
-class User < ApplicationRecord
-  has_many :questions
-  has_many :answers
+user.rb\
+class User < ApplicationRecord\
+  has_many :questions\
+  has_many :answers\
 end
 
-question.rbclass Question < ApplicationRecord
-  belongs_to :user
-  has_many :answers
+question.rb\
+class Question < ApplicationRecord\
+  belongs_to :user\
+  has_many :answers\
 end
 
-answer.rb
-class Answer < ApplicationRecord
-  belongs_to :user
-  belongs_to :question
+answer.rb\
+class Answer < ApplicationRecord\
+  belongs_to :user\
+  belongs_to :question\
 end
 
 ### Conclusão
@@ -79,7 +83,7 @@ Inicie o servidor através do comando
 
 rails server
 
-E Accesse sua applicação em um navegador web em http://localhost:3000.  Você terá agora um projeto FAQ básico com modelos user, question e answer.
+E acesse sua applicação em um navegador web em http://localhost:3000.  Você terá agora um projeto FAQ básico com modelos user, question e answer, onde poder-se-á criar, ler,  editar, atualizar e  apagar (CRUD) diversos registros, em cada modelo especificado. 
 
 
 
